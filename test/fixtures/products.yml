@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+tv:
+  title: Tv mala
+  description: Solo le falla la pantalla
+  price: 190
+
+phone:
+  title: Android phone
+  description: En buen estado
+  price: 105

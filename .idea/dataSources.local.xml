@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="RM-233.14808.14">
+    <data-source name="postgres@localhost" uuid="ce0475fd-f988-401b-bc66-9796670ee359">
+      <database-info product="PostgreSQL" version="14.11 (Homebrew)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="14.11" exact-driver-version="42.6">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping>
+        <introspection-scope>
+          <node negative="1">
+            <node kind="database" qname="@">
+              <node kind="schema" qname="@" />
+            </node>
+            <node kind="database" qname="vendelo_development" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="vendelo: production" uuid="04def345-4f63-4d4b-b7f5-43451fe5d376">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <user-name>vendelo</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="vendelo: development" uuid="cc395d86-eb84-4967-8699-0fc98379fd6f">
+      <database-info product="PostgreSQL" version="14.11 (Homebrew)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="14.11" exact-driver-version="42.6">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="vendelo: test" uuid="0d589104-5ffe-451c-8023-eacd72dcf3ce">
+      <database-info product="PostgreSQL" version="14.11 (Homebrew)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="14.11" exact-driver-version="42.6">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <schema-mapping>
+        <introspection-scope>
+          <node negative="1">
+            <node kind="database" negative="1" />
+            <node kind="database" qname="vendelo_development">
+              <node kind="schema" negative="1" />
+            </node>
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>
