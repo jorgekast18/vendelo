@@ -1,11 +1,14 @@
 class ProductsController < ApplicationController
 
+  """
+  Retrieves all products with attached photos from the database.
+  """
   def index
-    @products = Product.all
+    @products = Product.all.with_attached_photo
   end
 
   def show
-    @product = Product.find(params[:id])
+    product
   end
 
   def new
@@ -15,15 +18,36 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
-      redirect_to products_path
+      redirect_to products_path, notice: t('.create.success')
     else
       render :new, :status => :unprocessable_entity
     end
   end
 
+  def edit
+    product
+  end
+
+  def update
+    if product.update(product_params)
+      redirect_to products_path, notice: t('.update.success')
+    else
+      render :edit, :status => :unprocessable_entity
+    end
+  end
+
+  def destroy
+    product.destroy
+    redirect_to products_path, notice: t('.destroy.success'), status: :see_other
+  end
+
+  def product
+    @product = Product.find(params[:id])
+  end
+
   private
   def product_params
-    params.require(:product).permit(:title, :description, :price)
+    params.require(:product).permit(:title, :description, :price, :photo)
   end
 
 end

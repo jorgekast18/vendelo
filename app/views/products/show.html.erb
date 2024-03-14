@@ -1,7 +1,16 @@
 <h1 class='title'><%= @product.title %></h1>
+
+<%= image_tag @product.photo, with: 200 if @product.photo.attached? %>
+
 <p class="description">
   <%= @product.description %>
 </p>
 <span class="price">
   <%= @product.price %>
 </span>
+
+<%= link_to 'Editar Producto', edit_product_path(@product.id) %>
+<%= link_to 'Eliminar producto', product_path(@product.id), data: {
+  turbo_method: :delete,
+  turbo_confirm: t('common.confirm')
+} %>
