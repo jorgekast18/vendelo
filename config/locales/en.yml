@@ -34,6 +34,12 @@ en:
     index:
       title: 'Products'
       all: 'All products'
+      min_price: 'Min price'
+      max_price: 'Max price'
+      query_text: 'Search'
+      expensive: 'Expensive First'
+      cheapest: 'Cheapest First'
+      newest: 'Recently First'
     create:
       success: 'Product was successfully created.'
     update:
