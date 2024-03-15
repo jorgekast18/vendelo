@@ -4,8 +4,16 @@ tv:
   title: Tv mala
   description: Solo le falla la pantalla
   price: 190
+  category: videogames
 
 phone:
   title: Android phone
   description: En buen estado
   price: 105
+  category: phones
+
+air:
+  title: MacBook Air
+  description: Esta bueno
+  price: 160
+  category: computers

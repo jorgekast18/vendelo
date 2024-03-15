@@ -4,7 +4,11 @@ class ProductsController < ApplicationController
   Retrieves all products with attached photos from the database.
   """
   def index
-    @products = Product.all.with_attached_photo
+    @categories = Category.order(name: :asc).load_async
+    @products = Product.with_attached_photo.order(created_at: :desc)
+    if params[:category_id]
+      @products = @products.where(category_id: params[:category_id])
+    end
   end
 
   def show
@@ -17,6 +21,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
+
     if @product.save
       redirect_to products_path, notice: t('.create.success')
     else
@@ -47,7 +52,7 @@ class ProductsController < ApplicationController
 
   private
   def product_params
-    params.require(:product).permit(:title, :description, :price, :photo)
+    params.require(:product).permit(:title, :description, :price, :photo, :category_id)
   end
 
 end

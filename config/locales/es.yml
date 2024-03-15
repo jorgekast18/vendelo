@@ -19,6 +19,10 @@ es:
               blank: 'El precio no puede estar vacío'
   common:
     confirm: '¿Estás seguro?'
+    back: 'Volver'
+  shared:
+    header:
+      add_product: 'Anadir producto'
   products:
     edit:
       title: 'Editar producto'
@@ -28,9 +32,26 @@ es:
       submit: 'Crear'
     index:
       title: 'Productos'
+      all: 'Todos los productos'
     create:
       success: 'Producto creado correctamente.'
     update:
       success: 'Producto actualizado correctamente.'
     destroy:
       success: 'Producto eliminado correctamente.'
+  categories:
+    category:
+      edit: 'Editar'
+      delete: 'Eliminar'
+    index:
+      title: 'Categorias'
+    edit:
+      title: 'Editar categoría'
+    create:
+      created: 'Categoría creada correctamente.'
+    update:
+      updated: 'Categoría actualizada correctamente.'
+    destroy:
+      destroyed: 'Categoría eliminada correctamente.'
+    new:
+      title: 'Nueva categoría'

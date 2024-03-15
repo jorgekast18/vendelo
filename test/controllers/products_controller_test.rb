@@ -3,7 +3,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   test 'render all products' do
     get products_path
     assert_response :success
-    assert_select '.product', 2
+    assert_select '.product', 3
+    assert_select '.category', 4
+    end
+
+  test 'render a list of products filtered by category' do
+    get products_path(category_id: categories(:phones).id)
+    assert_response :success
+    assert_select '.product', 1
   end
 
   test 'render one product' do
@@ -27,7 +34,8 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
       product: {
         title: 'Nuevo producto',
         description: 'Se ve bien',
-        price: 95
+        price: 95,
+        category_id: categories(:phones).id
       }
     }
     assert_redirected_to products_path

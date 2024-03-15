@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+videogames:
+  name: Videojuegos
+
+computers:
+  name: Informática
+
+phones:
+  name: Teléfonos
+
+others:
+  name: Sin Categoria
