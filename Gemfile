@@ -68,3 +68,5 @@ group :test do
 end
 
 
+
+gem "pagy", "~> 7.0"
