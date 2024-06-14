@@ -1,4 +1,6 @@
 en:
+  app_name: 'Sell It'
+  meta_title: 'Buy and sell second hand products'
   activerecord:
     models:
       product: 'Product'
@@ -21,9 +23,18 @@ en:
   common:
     confirm: 'Are you sure?'
     back: 'Go back'
+    not_logged_in: 'You have to logging or create an account'
   shared:
     header:
       add_product: 'Add Product'
+  authentication:
+    users:
+      create:
+        created: 'Your account has been successfully created.'
+    sessions:
+      create:
+        created: 'Welcome.'
+        failed: 'Wrong email or username or password.'
   products:
     edit:
       title: 'Edit Product'

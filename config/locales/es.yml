@@ -1,4 +1,6 @@
 es:
+  app_name: 'Vendelo'
+  meta_title: 'Compra y vende productos de segunda'
   activerecord:
     models:
       product: 'Producto'
@@ -20,9 +22,18 @@ es:
   common:
     confirm: '¿Estás seguro?'
     back: 'Volver'
+    not_logged_in: 'Debes estar logueado o crear una cuenta'
   shared:
     header:
       add_product: 'Anadir producto'
+  authentication:
+    users:
+      create:
+        created: 'Tu usuario ha sido creado.'
+    sessions:
+      create:
+        created: 'Bienvenido.'
+        failed: 'Correo o nombre de usuario o contraseña incorrectos.'
   products:
     edit:
       title: 'Editar producto'

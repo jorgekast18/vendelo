@@ -18,7 +18,7 @@
   <%  end %>
   <%= link_to t('.all'), products_path %>
   <%= render partial: 'category', collection: @categories %>
-  <%= turbo_frame_tag "products-#{@pagy.page}", class: "products" do %>>
+  <%= turbo_frame_tag "products-#{@pagy.page}", class: "products" do %>
     <%= render partial: 'product', collection: @products %>
     <%= turbo_frame_tag "products-#{@pagy.next}",
                         class: 'products',

@@ -5,18 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ce6878-a807-422a-a147-19c0aab84744" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/authentication/sessions_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/authentication/users_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/current.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/queries/find_products.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/authentication/sessions/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/authentication/users/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/authentication/sessions_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/authentication/users_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0d589104-5ffe-451c-8023-eacd72dcf3ce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0d589104-5ffe-451c-8023-eacd72dcf3ce.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cc395d86-eb84-4967-8699-0fc98379fd6f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cc395d86-eb84-4967-8699-0fc98379fd6f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cc395d86-eb84-4967-8699-0fc98379fd6f/storage_v2/_src_/database/vendelo_development.3xyHFQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cc395d86-eb84-4967-8699-0fc98379fd6f/storage_v2/_src_/database/vendelo_development.3xyHFQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce0475fd-f988-401b-bc66-9796670ee359.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ce0475fd-f988-401b-bc66-9796670ee359.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vendelo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vendelo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ruby-version" beforeDir="false" afterPath="$PROJECT_DIR$/.ruby-version" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/category.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/products/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/products/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/locales/en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/locales/es.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/es.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/categories_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/categories_controller_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/controllers/products_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/products_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/categories.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/categories.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/fixtures/products.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/products.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +47,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Ruby File" />
         <option value="ERB File" />
+        <option value="Ruby File" />
       </list>
     </option>
   </component>
@@ -52,6 +73,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/jorgecastano/Documents/Courses/Ruby/vendelo&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -157,7 +179,10 @@
       <updated>1710361816968</updated>
       <workItem from="1710361818131" duration="1206000" />
       <workItem from="1710363032304" duration="3030000" />
-      <workItem from="1710368487239" duration="32712000" />
+      <workItem from="1710368487239" duration="36757000" />
+      <workItem from="1711652245076" duration="16000" />
+      <workItem from="1718301787381" duration="14129000" />
+      <workItem from="1718394507298" duration="1123000" />
     </task>
     <servers />
   </component>

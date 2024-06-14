@@ -1,5 +1,8 @@
 require 'test_helper'
 class ProductsControllerTest < ActionDispatch::IntegrationTest
+  def setup
+    login
+  end
   test 'render all products' do
     get products_path
     assert_response :success
@@ -10,17 +13,17 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   test 'render a list of products filtered by category' do
     get products_path(category_id: categories(:phones).id)
     assert_response :success
-    assert_select '.product', 1
+    assert_select '.product', 0
     end
 
   test 'render a list of products filtered by min_price and max_price' do
     get products_path(min_price: 120, max_price: 200)
     assert_response :success
-    assert_select '.product', 8
+    assert_select '.product', 7
     end
 
   test 'search a product by query text' do
-    get products_path(query_text: 'MacBook Air')
+    get products_path(query_text: 'air')
     assert_response :success
     assert_select '.product', 1
     assert_select 'h2', 'MacBook Air'
@@ -83,14 +86,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'render an edit product form' do
-    get edit_product_path(products(:phone))
+    get edit_product_path(products(:iphone))
 
     assert_response :success
     assert_select 'form'
   end
 
   test 'allow to update a product' do
-    patch product_path(products(:phone)), params: {
+    patch product_path(products(:iphone)), params: {
       product: {
         price: 96
       }
@@ -102,7 +105,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
 
   test 'does not allow to update a product with an invalid field' do
-    patch product_path(products(:phone)), params: {
+    patch product_path(products(:iphone)), params: {
       product: {
         price: nil
       }
@@ -113,7 +116,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
   test 'allow to destroy a product' do
     assert_difference('Product.count', -1) do
-      delete product_path(products(:phone))
+      delete product_path(products(:iphone))
     end
     assert_redirected_to products_path
     assert_equal flash[:notice], 'Product was successfully destroyed.'
