@@ -4,29 +4,32 @@ en:
   activerecord:
     models:
       product: 'Product'
+      user: 'User'
+      category: 'Category'
     attributes:
       product:
         title: 'Title'
         description: 'Description'
         price: 'Price'
         photo: 'Photo'
-    errors:
-      models:
-        product:
-          attributes:
-            title:
-              blank: 'Title can not be blank'
-            description:
-              blank: 'Description can not be blank'
-            price:
-              blank: 'Price can not be blank'
+      user:
+        email: 'Email'
+        username: 'Username'
+        password: 'Password'
+      category:
+        name: 'Name'
+        description: 'Description'
   common:
     confirm: 'Are you sure?'
     back: 'Go back'
     not_logged_in: 'You have to logging or create an account'
+    not_allowed: 'You are not allowed to do this action'
   shared:
     header:
       add_product: 'Add Product'
+      login: 'Login'
+      register: 'Register'
+      logout: 'Logout'
   authentication:
     users:
       create:
@@ -35,6 +38,8 @@ en:
       create:
         created: 'Welcome.'
         failed: 'Wrong email or username or password.'
+      destroy:
+        destroyed: 'You have been logged out.'
   products:
     edit:
       title: 'Edit Product'

@@ -4,28 +4,32 @@ es:
   activerecord:
     models:
       product: 'Producto'
+      user: 'Usuario'
+      category: 'Categoría'
     attributes:
-      title: 'Título'
-      description: 'Descripción'
-      price: 'Precio'
-      photo: 'Foto'
-    errors:
-      models:
-        product:
-          attributes:
-            title:
-              blank: 'El título no puede estar vacío'
-            description:
-              blank: 'La descripción no puede estar vacía'
-            price:
-              blank: 'El precio no puede estar vacío'
+      product:
+        title: 'Título'
+        description: 'Descripción'
+        price: 'Precio'
+        photo: 'Foto'
+      user:
+        email: 'Correo'
+        username: 'Nombre de usuario'
+        password: 'Contraseña'
+      category:
+        name: 'Nombre'
+        description: 'Descripción'
   common:
     confirm: '¿Estás seguro?'
     back: 'Volver'
     not_logged_in: 'Debes estar logueado o crear una cuenta'
+    not_allowed: 'No puedes realizar esta acción'
   shared:
     header:
       add_product: 'Anadir producto'
+      login: 'Login'
+      register: 'Registro'
+      logout: 'Salir'
   authentication:
     users:
       create:
@@ -34,6 +38,8 @@ es:
       create:
         created: 'Bienvenido.'
         failed: 'Correo o nombre de usuario o contraseña incorrectos.'
+      destroy:
+        destroyed: 'Has salido.'
   products:
     edit:
       title: 'Editar producto'
