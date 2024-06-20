@@ -5,30 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ce6878-a807-422a-a147-19c0aab84744" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/authentication.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/authorization.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/language.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/base_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/category_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/product_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/locales/i18n.es.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/error.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/favorites_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/concerns/favoritable.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/favorites/create.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/favorites/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/favorites_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/authentication/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/authentication/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/authentication/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/authentication/sessions/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/authentication/users/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/authentication/users/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/queries/find_products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/queries/find_products.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/products/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/products/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/locales/en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/locales/es.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/es.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/authentication/sessions_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/authentication/sessions_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/products_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/products_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +171,7 @@
       <workItem from="1710368487239" duration="36757000" />
       <workItem from="1711652245076" duration="16000" />
       <workItem from="1718301787381" duration="14129000" />
-      <workItem from="1718394507298" duration="9353000" />
+      <workItem from="1718394507298" duration="15479000" />
     </task>
     <servers />
   </component>

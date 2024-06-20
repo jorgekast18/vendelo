@@ -24,12 +24,14 @@ en:
     back: 'Go back'
     not_logged_in: 'You have to logging or create an account'
     not_allowed: 'You are not allowed to do this action'
+    not_found: 'Not found'
   shared:
     header:
       add_product: 'Add Product'
       login: 'Login'
       register: 'Register'
       logout: 'Logout'
+      favorites: 'Favorites'
   authentication:
     users:
       create:
@@ -56,6 +58,8 @@ en:
       expensive: 'Expensive First'
       cheapest: 'Cheapest First'
       newest: 'Recently First'
+    show:
+      view_more_products: 'View more products by %{username}'
     create:
       success: 'Product was successfully created.'
     update:
@@ -79,3 +83,7 @@ en:
       destroyed: 'Your category has been successfully destroyed'
     new:
       title: 'New category'
+  favorites:
+    index:
+      title: 'My favorites'
+      empty: 'You have no favorites yet.'

@@ -24,12 +24,14 @@ es:
     back: 'Volver'
     not_logged_in: 'Debes estar logueado o crear una cuenta'
     not_allowed: 'No puedes realizar esta acción'
+    not_found: 'No encontrado'
   shared:
     header:
       add_product: 'Anadir producto'
       login: 'Login'
       register: 'Registro'
       logout: 'Salir'
+      favorites: 'Favoritos'
   authentication:
     users:
       create:
@@ -56,6 +58,8 @@ es:
       expensive: 'Más caro'
       cheapest: 'Más barato'
       newest: 'Más reciente'
+    show:
+      view_more_products: 'Ver más productos de %{username}'
     create:
       success: 'Producto creado correctamente.'
     update:
@@ -78,3 +82,7 @@ es:
       destroyed: 'Categoría eliminada correctamente.'
     new:
       title: 'Nueva categoría'
+  favorites:
+    index:
+      title: 'Mis favoritos'
+      empty: 'No hay favoritos'
