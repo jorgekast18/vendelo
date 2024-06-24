@@ -75,3 +75,5 @@ gem "pagy", "~> 7.0"
 gem "tailwindcss-rails", "~> 2.6"
 
 gem "view_component", "~> 3.12"
+
+gem "sidekiq", "~> 7.2"
