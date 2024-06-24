@@ -91,3 +91,7 @@ es:
     index:
       title: 'Mis favoritos'
       empty: 'No hay favoritos'
+  user_mailer:
+    welcome:
+      subject: 'Bienvenido a Vendelo'
+      welcome_message: 'Hey %{username}, bienvenid@ a Vendelo. Esperemos que vendas un montón!'

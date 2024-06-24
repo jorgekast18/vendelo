@@ -7,7 +7,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get products_path
     assert_response :success
     assert_select '.product', 12
-    assert_select '.category', 11
+    assert_select '.category', 12
     end
 
   test 'render a list of products filtered by category' do
