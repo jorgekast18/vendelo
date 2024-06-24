@@ -70,3 +70,5 @@ end
 
 
 gem "pagy", "~> 7.0"
+
+gem "tailwindcss-rails", "~> 2.6"
