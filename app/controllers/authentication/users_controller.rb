@@ -1,3 +1,4 @@
+require "net/http"
 class Authentication::UsersController < ApplicationController
 
   skip_before_action :protect_pages
@@ -7,6 +8,7 @@ class Authentication::UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @user.country = FetchCountryService.new(params[request.remote_ip]).perform
     if @user.save
       UserMailer.with(user: @user).welcome.deliver_later
       session[:user_id] = @user.id
