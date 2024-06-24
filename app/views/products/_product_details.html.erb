@@ -1,0 +1,13 @@
+<div id="<%= dom_id(product) %>">
+  <h1 class='title'><%= product.title %></h1>
+
+  <%= image_tag product.photo, with: 200 if product.photo.attached? %>
+
+  <p class="description">
+    <%= product.description %>
+  </p>
+  <span class="price">
+    <%= product.price %>
+  </span>
+
+</div>

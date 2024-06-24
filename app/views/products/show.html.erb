@@ -1,13 +1,4 @@
-<h1 class='title'><%= @product.title %></h1>
-
-<%= image_tag @product.photo, with: 200 if @product.photo.attached? %>
-
-<p class="description">
-  <%= @product.description %>
-</p>
-<span class="price">
-  <%= @product.price %>
-</span>
+<%= render partial: 'product_details', locals: { product: @product} %>
 
 <%= link_to 'Editar Producto', edit_product_path(@product.id) if @product.owner? %>
 <%= link_to 'Eliminar producto', product_path(@product.id), data: {
@@ -22,3 +13,4 @@
 <div data-controller="websocket-product" data-productid="<%= @product.id %>"></div>
 
 
+<%= turbo_stream_from @product %>
